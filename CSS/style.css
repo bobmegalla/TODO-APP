@@ -1,0 +1,177 @@
+*{
+padding: 0px;
+margin: 0px;
+}
+
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #909D99;
+    padding: 1px;
+}
+.main .container{
+    width: 70%;
+    height: 80%;
+    background-color: #FF6C23;
+    margin: auto;
+    padding-top: 133px;
+}
+.main .container .container1{
+    background-color: #909D99;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    background-image: url(./pngtree-to-do-list-student-picture-image_1599884.jpeg);
+    background-size: 100% 100%;
+}
+
+.main .container .container1 .head{
+    color: #FF6C23;
+    font-size: 50px;
+    text-align: right;
+    padding-top: 40px;
+    padding-right: 48px;
+    font-family: 'Amatic SC', cursive;
+}
+.main .container .container1 .taskinput{
+    width: 50%;
+    float: right;
+    margin: 10px 15px;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+.main .container .container1 .btn{
+    width: 50%;
+    float: right;
+    border-radius: 30px;
+    margin: 10px 15px;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #8C8453;
+    transition: .3s all ease-in-out;
+}
+.main .container .container1 .btn:hover{
+    background-color: transparent;
+    color: 8C8453;
+
+}
+.listofTodo{
+    height: 300px;
+    width: 50%;
+   /*  background-color: red ; */
+    float: right;
+    margin: 10px 15px;
+    justify-content: center;
+}
+.listofTodo .notasks{
+    width: 100%;
+ /*    background-color: aqua; */
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+}
+.listofTodo ul{
+   width: 100%;
+   height: 86.7%;
+ /*   background-color: aquamarine; */
+   overflow:scroll;
+}
+.listofTodo ul li{
+   /*  background-color: bisque; */
+    font-size: 20px;
+    margin: 20px 10px;
+    font-family: 'Amatic SC', cursive;
+    padding-left: 15px;
+   
+}
+.listofTodo ul .done{
+ 
+     text-decoration: line-through;
+    
+ }
+ .howtouse{
+    position: absolute;
+    width: 15%;
+    padding-top: 5px;
+    padding-left: 5px;
+    backdrop-filter: blur(5px);
+ }
+
+ @media(max-width:768px){
+    .main .container {
+        width: 70%;
+        height: 656px;
+    }
+    .main .container .container1 {
+        background-color: #909D99;
+        width: 80%;
+        height: 100%;
+    }
+    .main .container .container1 .head {
+        color: #FF6C23;
+        font-size: 30px;
+        text-align: right;
+        padding-top: 40px;
+        padding-right: 41px;
+    }
+    .main .container .container1 .taskinput {
+        width: 49%;
+        float: right;
+        margin: 10px 12px;
+        font-family: 'Amatic SC', cursive;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .main .container .container1 .btn {
+        width: 50%;
+        float: right;
+        border-radius: 30px;
+        margin: 10px 11px;
+    }
+
+    .listofTodo {
+        height: 435px;
+        width: 50%;
+        
+    }
+ }
+
+ /* Media mobile */
+
+ @media(max-width:425px){
+    .main {
+        width: 100%;
+        height: 99vh;
+    }
+    .main .container {
+        width: 90%;
+        height: 513px;
+        padding-top: 120px;
+    }
+    .howtouse {
+        position: absolute;
+        width: 90%;
+        padding-top: 5px;
+        padding-left: 40px;
+    }
+    .main .container .container1 {
+        background-color: #909D99;
+        width: 95%;
+        height: 100%;
+    }
+    .listofTodo {
+        height: 299px;
+        width: 49%;
+        background-color: #FF6C23;
+    }
+ }
